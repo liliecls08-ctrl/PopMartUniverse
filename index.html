@@ -4,52 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pop Mart Universe</title>
-</head>
+
 <style>
-    body {
+     
+     body {
         margin: 0;
+     }
+
+    header > section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 1px solid lightgrey;
+
     }
 
-    .utama {
-        background-color:white;
+     nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        border-bottom: 1px solid lightgray;
+        padding: 20px;
+     }
+
+     a{
+        text-decoration: none;
+        color: black;
+     }
+
+     .utama{
         height: 120dvh;
         width: 100dvw;
-        
-    }
-
-    nav {
-        align-items: center;
-        flex-direction: row;
-        background-color: cornsilk;
-    
-    }
-
-    .pos1 > .gambar {
+        flex-direction: column;
+     }
+     main {
+        flex: 10;
+        display: flex;
+        flex-direction: column;
+     }
+     .pos1{
         flex: 1;
-        background-image: url("img/gambar\ twinkle.webp");
+        background-color: aliceblue;
+        display: flex;
+        flex-direction: row;
+     }
+     .pos1 > section{
+        flex: 1;
+     }
+     .pos1 > .gambar{
+        background-image: url(img/gambar\ twinkle.webp);
         background-size: cover;
-        background-repeat: no-repeat;
+     }
 
-    }
+     footer {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+     }
 
-  
-</style>
+     footer > section {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border-bottom: 1px solid lightgrey;
+     }
+
+     
+    </style>
+</head>
 <body>
     <main class="utama">
         <header>
+            <section>
+                <img class="logo" src="img/logo popmart.png" width="150" alt="Gambar Logo">
+            </section>
             <nav>
-                <img class="logo" src="img/logo popmart.png" alt="Logo Popmart" width="150px">
-                <a href="">Characters</a>
-                <a href="">Categories</a>
-                <a href="">Pick Up Store</a>
+                <a href="">Karakter</a>
+                <a href="">Kategori</a>
+                <a href="">Temukan Toko</a>
                 <a href="">Tentang Kami</a>
-            </nav>
+            </nav> 
         </header>
         <main>
             <section class="pos1">
-                <section class="gambar"></section>
+                <section class="gambar">
+                </section>
             </section>
+            
+
         </main>
+        <footer>
+            <section>
+                <h2>IKUTI KAMI DI</h2>
+            </section>
+            <section class="information">
+            </section>
+        </footer>
+
     </main>
 </body>
 </html>
