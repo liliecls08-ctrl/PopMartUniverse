@@ -138,6 +138,30 @@
         font-weight: bold;
      }
 
+     button {
+        background-color: red;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        font-size: 20px;
+        border-color: transparent;
+        width: 150px;
+        height: 50px;
+        margin-left: 0px;
+        transition:
+          width 2s,
+          height 2s,
+          background-color 1s,
+          margin-left 2s;
+     }
+     button:hover {
+        background-color: red;
+        width: 200px;
+        height: 50px;
+     }
+
+
     footer {
         flex: 1;
         display: flex;
@@ -210,7 +234,7 @@
                     <section class="judul">
                         <h1> HOT PRODUCTS</h1>
                         <p>Explore every POP MART collectible, from iconic favorites to the latest new arrivals</p>
-                        <a href="">Learn More ></a>
+                        <button>Lear More</button>
                         </section>
                         <section class="PopularProducts">
                             <img src="img/bikini bottom buddies.jpg" width="250px">
