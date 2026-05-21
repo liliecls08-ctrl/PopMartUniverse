@@ -19,8 +19,6 @@
         align-items: center;
         padding: 20px;
         border-bottom: 1px solid lightgrey;
-        
-
     }
 
      nav {
@@ -46,7 +44,7 @@
         left: 20px;        
      }
 
-     .utama{
+     .header{
         height: 120dvh;
         width: 100dvw;
         flex-direction: column;
@@ -71,7 +69,7 @@
         gap: 25px;
         padding: 40px 5%;
         border-bottom: 1px solid lightgray;
-
+        align-items: center;
         
      }
      .pos2 > section {
@@ -80,7 +78,7 @@
         display: block;
         border-radius: 10px;
         text-align: center;
-        border: 1px solid lightgrey;   
+        border: 1px solid lightgrey;
      }     
 
      .pos1 > .judul > h1 {
@@ -138,6 +136,30 @@
         font-weight: bold;
      }
 
+     button {
+        background-color: red;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        font-size: 20px;
+        border-color: transparent;
+        width: 150px;
+        height: 50px;
+        margin-left: 0px;
+        transition:
+          width 2s,
+          height 2s,
+          background-color 1s,
+          margin-left 2s;
+     }
+     button:hover {
+        background-color: red;
+        width: 200px;
+        height: 50px;
+     }
+
+
     footer {
         flex: 1;
         display: flex;
@@ -158,17 +180,19 @@
     </style>
 </head>
 <body>
+    
     <main class="utama">
         <header>
             <section>
-                <img class="logo" src="img/logo popmart.png" width="150" alt="Gambar Logo">
+                <a href="index.html"></a><img class="logo" src="img/logo popmart.png" width="150" alt="Gambar Logo">
                   <input type="text" placeholder="Search" class="search-bar">
             </section>
             <nav>
-                <a href="">Karakter</a>
-                <a href="">Kategori</a>
-                <a href="">Temukan Toko</a>
-                <a href="">Tentang Kami</a>
+                <a href="index.html">Home</a>
+                <a href="">Characters</a>
+                <a href="">Categories</a>
+                <a href="">Pick Up Store</a>
+                <a href="aboutus.html">About Us</a>
             </nav> 
         </header>
         <main>
@@ -196,6 +220,11 @@
                     <h3>CRYBABY Cry Me an Ocean Series Earphone Bag</h3>
                     <p>Rp 309.000,00</p>
                     </section>
+                    <section class="crybaby">
+                    <img src="img/crybaby figures.jpg" width="250px">
+                    <h3>CRYBABY Cry Me an Ocean Series Figures</h3>
+                    <p>Rp 185.000,00</p>
+                    </section>
                     <br>
                     </br>
                 </section>
@@ -205,7 +234,7 @@
                     <section class="judul">
                         <h1> HOT PRODUCTS</h1>
                         <p>Explore every POP MART collectible, from iconic favorites to the latest new arrivals</p>
-                        <a href="">Learn More ></a>
+                        <button>Learn More</button>
                         </section>
                         <section class="PopularProducts">
                             <img src="img/bikini bottom buddies.jpg" width="250px">
@@ -247,6 +276,11 @@
                             <h4>Hirono×Le Petit Prince Series Figures</h4>
                             <p>Rp 179.000,00</p>
                             </section>
+                            <section class="PopularProducts">
+                            <img src="img/Skull Panda The Paradox Series Figures.jpg" width="250px">
+                            <h4>SKULLPANDA The Paradox Series Figures</h4>
+                            <p>Rp 179.000,00</p>
+                            </section>
                     </section>
                 </section>
 
@@ -266,5 +300,6 @@
         </footer>
 
     </main>
+    
 </body>
 </html>
