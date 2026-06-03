@@ -54,29 +54,187 @@
         flex-direction: column;
      }
 
-     .pos1 {
-        flex: 1;
-        background-color: aliceblue;
-        display: flex;
-        flex-direction: row;
-      }
 
-       main {
-        flex: 10;
-        display: flex;
-        flex-direction: column;
-      }
+  .container{
+    width:80%;
+    background:white;
+    border-radius:20px;
+    margin:40px auto;
+    padding:40px;
+    display:flex;
+    gap:30px;
+    justify-content:center;
+  }
 
-      .pos1 > section {
-        flex: 1;
-      }
-      .pos1 > .gambar {
-        flex: 1;
-        background-image: url("img/figureseri.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
+  .gallery{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+  }
 
+  .thumb{
+    width:70px;
+    height:70px;
+    overflow: hidden;
+    background:#d9ecff;
+    border-radius:10px;
+    border:2px solid transparent;
+    cursor:pointer;
+  }
+
+  .thumb img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .thumb.active{
+    border-color:#4da3ff;
+  }
+
+  .product{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f8f8f8;
+    border-radius:20px;
+    min-height:450px;
+  }
+
+  .product img{
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .gambar {
+    width: 1000px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .info{
+    width:350px;
+  }
+
+  .badge{
+    background:black;
+    color:white;
+    padding:5px 12px;
+    border-radius:5px;
+    font-size:12px;
+    display:inline-block;
+    margin-bottom:20px;
+  }
+
+  .info h1{
+    font-size:30px;
+    margin-bottom:20px;
+    line-height:1.3;
+  }
+
+  .price{
+    color:#d84b4b;
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:30px;
+  }
+
+  .info h3{
+    margin-bottom:15px;
+    margin-top:20px;
+    font-size:16px;
+  }
+
+  .size-options{
+    display:flex;
+    gap:15px;
+  }
+
+  .size-options button{
+    padding:12px 20px;
+    border:1px solid #ccc;
+    background:white;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+  }
+
+  .size-options button.active{
+    border-color:#4da3ff;
+    background:#eef6ff;
+  }
+
+  .quantity{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    margin-bottom:30px;
+  }
+
+  .quantity button{
+    width:35px;
+    height:35px;
+    border:none;
+    background:#eee;
+    border-radius:8px;
+    font-size:20px;
+    cursor:pointer;
+  }
+
+  .notify-btn{
+    width:100%;
+    padding:18px;
+    background:black;
+    color:white;
+    border:none;
+    border-radius:12px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+  }
+
+  .notify-btn:hover{
+    background:#333;
+  }
+
+  .product-spec{
+  width:100%;
+  margin-top:40px;
+
+  background:white;
+
+  padding:30px;
+
+  border-radius:20px;
+
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.product-spec h2{
+  margin-bottom:20px;
+  font-size:28px;
+}
+
+.product-spec table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.product-spec td{
+  padding:15px;
+  border-bottom:1px solid #eee;
+}
+
+.product-spec td:first-child{
+  width:220px;
+  font-weight:bold;
+  color:#555;
+}
 
     </style>
 </head>
@@ -86,7 +244,7 @@
     <main class="utama">
         <header>
             <section>
-                <img class="logo" src="img/logo popmart.png" width="150" alt="Gambar Logo">
+                <img class="logo" src="img/logo popmart.png" width="150px" alt="Gambar Logo">
                   <input type="text" placeholder="Search" class="search-bar">
             </section>
             <nav>
@@ -97,55 +255,111 @@
                 <a href="aboutus.html ">About Us</a>
             </nav> 
         </header>
-
         
-        <main>
-            <section class="pos1">
-                <section class="judul">
-                    <h1>CRYBABY Cry Me an Ocean Series Figures</h1>
-                    <p>CRYBABY Cry Me an Ocean Series Figures merupakan koleksi figur blind box premium dengan tema kehidupan bawah laut yang menggemaskan. Setiap karakter hadir dengan ekspresi khas CRYBABY yang sedih namun lucu, dipadukan dengan kostum dan aksesori bertema laut seperti paus, penyelam, kerang, dan makhluk laut lainnya. Produk ini cocok untuk kolektor art toys, penggemar designer toys, maupun sebagai hadiah unik untuk teman dan keluarga.</p>
-                   <br />
-                   <br/>
-                    <p>
-                        Spesifikasi Produk
-                        <br>
-                            Nama Produk: CRYBABY Cry Me an Ocean Series Figures
-                        <br>
-                            Kategori: Blind Box / Art Toy Collectible
-                        <br>
-                            Karakter: Random 
-                        <br>
-                            Tema: Ocean / Underwater Series
-                        <br>
-                            Material: PVC & ABS berkualitas tinggi
-                        <br>
-                            Finishing: Cat premium dengan detail halus
-                        <br>
-                            Warna: Multicolor
-                        <br>
-                            Kondisi: Baru 
-                        <br>
-                            Kemasan: Box original tersegel
-                        <br>
-                            Rekomendasi Usia: 15 tahun ke atas
-                        <br>
-                            Fungsi: Koleksi, dekorasi meja, pajangan, hadiah
-                    </p>
-                <label class="harga">Rp 185.000,00</label>
-                <br>           
-                </section>
-                <section class="gambar"></section>
-                <button>Tambah Ke Keranjang</button>
-            </section>
-            </main>
-        </main>
+    <div class="container">
 
-         
+       <div class="gallery">
+      <div class="thumb active">
+        <img src="img/crybaby figures.jpg" alt="">
+      </div>
+      <div class="thumb">
+        <img src="img/redfigures.jpg" alt="">
+      </div>
+      <div class="thumb">
+        <img src="img/bluefigures.jpg" alt="">
+      </div>
+      <div class="thumb">
+        <img src="img/allvariantfigures.jpg" alt="">
+      </div>
+    </div>
 
+    
+    <div class="product">
+      <div class="gambar">
+        <img src="img/crybaby figures.jpg" alt="Crybaby">
+      </div>
+    </div>
 
-        </main>
+    
+    <div class="info">
+      <span class="badge">NEW</span>
 
-        </main>
+      <h1>CRYBABY Cry Me an Ocean Series Figures</h1>
+
+      <p class="price">Rp185.000,00</p>
+
+      <h3>SIZE</h3>
+
+      <div class="size-options">
+        <button class="active">Single Box</button>
+        <button>Whole Set</button>
+      </div>
+
+      <h3>Quantity</h3>
+
+      <div class="quantity">
+        <button>-</button>
+        <span>0</span>
+        <button>+</button>
+      </div>
+
+      <button class="notify-btn">
+        LET ME KNOW WHEN IT'S AVAILABLE
+      </button>
+
+    </div>
+
+  </div>
+
+    <div class="product-spec">
+
+  <h2>Spesifikasi Produk</h2>
+
+  <table>
+    <tr>
+      <td>Nama Produk</td>
+      <td>CRYBABY Cry Me an Ocean Series Figures</td>
+    </tr>
+
+    <tr>
+      <td>Brand</td>
+      <td>POP MART</td>
+    </tr>
+
+    <tr>
+      <td>Material</td>
+      <td>PVC / ABS</td>
+    </tr>
+
+    <tr>
+      <td>Ukuran</td>
+      <td>± 8 - 10 cm</td>
+    </tr>
+
+    <tr>
+      <td>Tipe</td>
+      <td>Blind Box</td>
+    </tr>
+
+    <tr>
+      <td>Series</td>
+      <td>Cry Me an Ocean</td>
+    </tr>
+
+    <tr>
+      <td>Kondisi</td>
+      <td>Baru</td>
+    </tr>
+
+    <tr>
+      <td>Isi Paket</td>
+      <td>1 Figure + Box</td>
+    </tr>
+
+  </table>
+
+</div>
+    </main>    
 </body>
 
 </html>
