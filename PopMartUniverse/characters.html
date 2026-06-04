@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;  
+     }
+
+    header > section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 1px solid lightgrey;
+    }
+
+     nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        border-bottom: 1px solid lightgray;
+        padding: 20px;
+     }
+
+     nav > a{
+        text-decoration: none;
+        color: black;
+     }
+
+     .search-bar{
+        padding: 5px 10px;
+        border: 1px solid gray;
+        border-radius: 20px;
+        outline: none;
+        position: absolute;
+        left: 20px;        
+     }
+
+     .header{
+        height: 120dvh;
+        width: 100dvw;
+        flex-direction: column;
+     }
+     
+     main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+     }
+
+    
+
+body{
+  background: #f5f5f5;
+}
+
+.menu{
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  color: #555;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.container{
+  width: 90%;
+  margin: 40px auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+
+.card{
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  transition: 0.3s;
+  cursor: pointer;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.card img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card h3{
+  font-size: 18px;
+  color: #333;
+}
+
+
+@media(max-width: 900px){
+  .container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 600px){
+  .container{
+    grid-template-columns: 1fr;
+  }
+
+  .menu{
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <main class="utama">
+        <header>
+            <section>
+                <img class="logo" src="img/logo popmart.png" width="150" alt="Gambar Logo">
+                  <input type="text" placeholder="Search" class="search-bar">
+            </section>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="characters.html">Characters</a>
+                <a href="">Categories</a>
+                <a href="">Pick Up Store</a>
+                <a href="aboutus.html ">About Us</a>
+            </nav> 
+        </header>
+    </main>    
+
+    <section class="container">
+
+    <div class="card">
+      <img src="" alt="">
+      <h3>THE MONSTERS</h3>
+    </div>
+
+    <div class="card">
+      <img src="" alt="">
+      <h3>Twinkle Twinkle</h3>
+    </div>
+
+    <div class="card">
+      <img src="" alt="">
+      <h3>SKULLPANDA</h3>
+    </div>
+
+    <div class="card">
+      <img src="" alt="">
+      <h3>CRYBABY</h3>
+    </div>
+
+    <div class="card">
+      <img src="" alt="">
+      <h3>MOLLY</h3>
+    </div>
+
+    <div class="card">
+      <img src="" alt="">
+      <h3>DIMOO</h3>
+    </div>
+
+    <div class="card">
+      <img src="" alt="">
+      <h3>HIRONO</h3>
+    </div>
+
+    <div class="card">
+      <img src="" alt="">
+      <h3>Bikini Bottom</h3>
+    </div>
+
+    <div class="card">
+      <img src="" alt="">
+      <h3>Zsiga</h3>
+    </div>
+
+    <div class="card">
+      <img src="" alt="">
+      <h3>PUCKY</h3>
+    </div>
+
+    <div class="card">
+      <img src="" alt="">
+      <h3>HACIPUPU</h3>
+    </div>
+
+    <div class="card">
+      <img src="" alt="">
+      <h3>Angry Molly</h3>
+    </div>
+
+    <div class="card">
+        <img src="" alt="">
+        <h3>Sanrio</h3>
+    </div>
+
+    <div class="card">
+        <img src="" alt="">
+        <h3>Baby Molly</h3>
+    </div>
+
+    <div class="card">
+        <img src="" alt="">
+        <h3>Nyota</h3>
+    </div>
+
+    <div class="card">
+        <img src="" alt="">
+        <h3>DISNEY</h3>
+    </div>
+
+    <div class="card">
+        <img src="" alt="">
+        <h3>KUBO</h3>
+    </div>
+
+    <div class="card">
+        <img src="" alt="">
+        <h3>POLAR</h3>
+    </div>
+
+    <div class="card">
+        <img src="" alt="">
+        <h3>Peach Riot</h3>
+    </div>
+
+    <div class="card">
+        <img src="" alt="">
+        <h3>CHAKA</h3>
+    </div>
+
+    <div class="card">
+        <img src="" alt="">
+        <h3>PINO JELLY</h3>
+    </div>
+
+    <div class="card">
+        <img src="" alt="">
+        <h3>AZURA</h3>
+    </div>
+
+    <div class="card">
+        <img src="" alt="">
+        <h3>Harry Potter</h3>
+    </div>
+
+    <div class="card">
+        <img src="" alt="">
+        <h3>Inosoul</h3>
+    </div>
+
+    <div class="card">
+        <h3>See All</h3>
+         </div>
+  </section>
+
+</body>
+</html>
+</body>
+</html>
