@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick Up Store</title>
+
+    <style>
+         body {
+        margin: 0;
+        display: flex;
+        
+     }
+
+    header > section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 1px solid lightgrey;
+    }
+
+     nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        border-bottom: 1px solid lightgray;
+        padding: 20px;
+     }
+
+     nav > a{
+        text-decoration: none;
+        color: black;
+     }
+
+     .search-bar{
+        padding: 5px 10px;
+        border: 1px solid gray;
+        border-radius: 20px;
+        outline: none;
+        position: absolute;
+        left: 20px;        
+     }
+
+     .header{
+        height: 120dvh;
+        width: 100dvw;
+        flex-direction: column;
+     }
+     
+     main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+     }
+
+     .store-section{
+    padding: 10px 8%;
+    }
+
+
+.store-section h1{
+    text-align:center;
+    font-size:70px;
+    margin-bottom:50px;
+}
+
+
+
+.store-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+
+
+.store-card{
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:20px;
+    display:flex;
+    align-items:center;
+    gap:25px;
+    position:relative;
+    background:white;
+}
+
+
+
+.store-card img{
+    width:180px;
+    height:150px;
+
+    object-fit:cover;
+
+    border-radius:8px;
+}
+
+
+
+.store-info h2{
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+
+
+.store-info p{
+    font-size:14px;
+    color:#666;
+    line-height:1.5;
+}
+
+
+
+.store-info a{
+    font-size:13px;
+    color:#555;
+}
+
+
+
+.time{
+    margin-top:15px;
+}
+
+
+
+.arrow{
+    position:absolute;
+
+    right:20px;
+    bottom:20px;
+
+    font-size:30px;
+    color:red;
+}
+
+footer {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+    }
+
+    footer > section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 40px;
+        color: white;
+    }
+    </style>
+</head>
+
+<main class="utama">
+        <header>
+            <section>
+                <img class="logo" src="img/logo popmart.png" width="150" alt="Gambar Logo">
+                  <input type="text" placeholder="Search" class="search-bar">
+            </section>
+            <nav>
+                <a href="/PopMartUniverse/index.html">Home</a>
+                <a href="/PopMartUniverse/characters/characters.html">Characters</a>
+                <a href="/PopMartUniverse/categories/categories.html">Categories</a>
+                <a href="">Pick Up Store</a>
+                <a href="/PopMartUniverse/aboutus/aboutus.html">About Us</a>
+            </nav> 
+        </header>
+
+        <section class="store-section">
+
+    <h1>Our Store</h1>
+
+
+
+    <div class="store-container">
+
+        <div class="store-card">
+            <img src="img/gandaria.jpg">
+
+            <div class="store-info">
+                <h2>POP MART Gandaria City</h2>
+
+                <p>
+                    📍 Gandaria City Mall, Ground Floor,
+                    Jakarta Selatan, DKI Jakarta
+                </p>
+
+                <a href="#">
+                    See on Google Maps
+                </a>
+
+                <p class="time">
+                    🕒 10:00 - 22:00
+                </p>
+            </div>
+            <span class="arrow">→</span>
+        </div>
+
+
+
+        <div class="store-card">
+            <img src="img/senayan.jpg">
+
+            <div class="store-info">
+                <h2>POP MART Senayan City</h2>
+
+                <p>
+                    📍 Senayan City Mall,
+                    Jakarta Pusat, DKI Jakarta
+                </p>
+
+                <a href="#">
+                    See on Google Maps
+                </a>
+
+                <p class="time">
+                    🕒 10:00 - 22:00
+                </p>
+            </div>
+
+            <span class="arrow">→</span>
+        </div>
+
+
+
+        <div class="store-card">
+            <img src="img/pakuwon.jpg">
+
+            <div class="store-info">
+                <h2>POP MART Pakuwon Mall</h2>
+
+                <p>
+                    📍 Pakuwon Mall Surabaya,
+                    Surabaya, Jawa Timur
+                </p>
+
+                <a href="#">
+                    See on Google Maps
+                </a>
+
+                <p class="time">
+                    🕒 10:00 - 22:00
+                </p>
+            </div>
+
+            <span class="arrow">→</span>
+        </div>
+
+
+
+        <div class="store-card">
+            <img src="img/bandung.jpg">
+
+            <div class="store-info">
+                <h2>POP MART 23 Paskal</h2>
+
+                <p>
+                    📍 23 Paskal Shopping Centre,
+                    Bandung, Jawa Barat
+                </p>
+
+                <a href="#">
+                    See on Google Maps
+                </a>
+
+                <p class="time">
+                    🕒 10:00 - 22:00
+                </p>
+            </div>
+
+            <span class="arrow">→</span>
+        </div>
+
+
+    </div>
+
+</section>
+
+<br>
+</br>
+
+
+ <footer>
+            <section>
+                <img src="img/logo popmart.png" srcset="" width="100px" alt="Gambar Logo">
+            </section>
+            <section>
+                <p><b>Consumer Complaint Services</b></p>
+                <p>PT Pop Mart Indonesia</p>
+                <p>Whatsapp/Phone Number : +62 811-162-1312</p>
+                <p>Email:id.service@popmart.com</p>
+            </section>
+            
+            </section>
+        </footer>
+
+<body>
+    
+</body>
+</html>
