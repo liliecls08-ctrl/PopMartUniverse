@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dunia BlindBox Terlengkap di Dunia">
+    <meta name="keywords" content="PopMart, BlindBox, Mystery Box">
+    <meta name="author" content="POPMART WEBSITE INDONESIA">
+
     <title>Pop Mart Universe</title>
 
 <style>
@@ -31,6 +35,7 @@
             box-shadow:  5px 5px 30px grey;
             display: flex;
             flex-direction: column;
+             animation: glow alternate infinite 1s;
         }
         .judulflashsale{
             flex: 2;
@@ -53,14 +58,57 @@
             background-color: lightblue;
             border-color: transparent;
             color: black;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             border-radius: 20px;
-            animation: animasitombolbesar alternate infinite 1.5s;
+            font-size: 20px;
+            animation: heartbeat alternate infinite 2s;
         }
+
+        @keyframes heartbeat {
+    0% {
+        transform:scale(1);
+    }
+    25% {
+        transform:scale(1.1);
+    }
+    50% {
+        transform:scale(1);
+    }
+    75% {
+        transform:scale(1.1);
+    }
+    100% {
+        transform:scale(1);
+    }
+}
+
+        @keyframes wobble {
+    0% {
+        transform:rotate(0);
+    }
+    25% {
+        transform:rotate(5deg);
+    }
+    50% {
+        transform:rotate(-5deg);
+    }
+    100% {
+        transform:rotate(0);
+    }
+}
+
+@keyframes glow {
+    from {
+        box-shadow:0 0 5px lightblue;
+    }
+    to {
+        box-shadow:0 0 30px cyan;
+    }
+}
 
         .judulflashsale > h2 {
             font-size: 30px;
+             animation: wobble alternate infinite 2s;
         }
         
         .judulflashsale > p {
@@ -84,21 +132,12 @@
         .close-btn:hover {
             background: rgba(0,0,0,0.06);
         }
-        @keyframes animasitombolbesar {
-            from {
-                width: 10dvw;
-                height: 6dvh;
-                font-size: small;
-            }
-            to {
-                font-size: large;
-                width: 20dvw;
-                height: 12dvh;
-            }
-        }
+        
+
      body {
         margin: 0;
         display: flex;
+
         
      }
 
@@ -108,6 +147,7 @@
         align-items: center;
         padding: 20px;
         border-bottom: 1px solid lightgrey;
+        
     }
 
      nav {
@@ -160,6 +200,7 @@
         border-bottom: 1px solid lightgray;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         
      }
 
@@ -171,7 +212,7 @@
      }     
      
 
-     .judul > h1 {
+    h1{
         text-align: center;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
      }
@@ -181,8 +222,8 @@
         font-size: 18px;
         text-decoration: none;
         color: black;
-
      }
+
      .pos2 > .crybaby > p {
         color: red;
         font-weight: bold;
@@ -212,7 +253,7 @@
 
      .pos3 > .judul {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
-        text-align: left ;
+        text-align: justify ;
      }
 
      .pos3 > .judul > a {
@@ -220,8 +261,16 @@
         font-weight: bold;
      }
 
+     .pos3 > .judul > p {
+        text-align: justify;
+     }
+
      .pos3 > .PopularProducts > h4 {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+
+     .pos3 > .judul > h1 {
+        text-align: left;
      }
 
      .pos3 > .PopularProducts > p {
@@ -284,7 +333,7 @@
                 <p>Pop Mart Collectibles Up to 50% OFF</p>
             </div>
             <div class="boxtombol">
-                <button>EXPLORE NOW</button>
+                <button>See Exclusive</button>
             </div>
         </section>
     </div>
@@ -296,10 +345,10 @@
             </section>
             <nav>
                 <a href="/PopMartUniverse/index.html">Home</a>
-                <a href="/PopMartUniverse/characters/characters.html">Characters</a>
-                <a href="/PopMartUniverse/categories/categories.html">Categories</a>
-                <a href="">Pick Up Store</a>
-                <a href="/PopMartUniverse/aboutus/aboutus.html">About Us</a>
+                <a href="/characters/characters.html">Characters</a>
+                <a href="/categories/categories.html">Categories</a>
+                <a href="/pickup/pickup.html">Pick Up Store</a>
+                <a href="/aboutus/aboutus.html">About Us</a>
             </nav> 
         </header>
         <main>
@@ -308,87 +357,92 @@
                     <source src="img/crybaby.mp4" type="video/mp4"></video>
             </section>
 
+            <br>
+            <h1> CRYBABY : Cry Me An Ocean Series </h1> 
+        </br>
             
-            
-                 <section class="judul">
-                 <h1> CRYBABY : Cry Me An Ocean Series </h1>
-                 <section class="pos2">   
+                 <section class="pos2"> 
                 <div class="crybaby"> 
-                    <img src="img/crybaby cry me an ocean series fridge magnet.jpg" width="250px" >
+                    <img src="img/crybaby cry me an ocean series fridge magnet.jpg" width="250px" alt="GambarSeriFridge" >
+                    <br>
                     <a href="/Cry Me An Ocean Series/serifridge.html">CRYBABY Cry Me an Ocean Series Fridge Magnet</a>
                     <p>Rp 159.000,00</p>
                 </div>
 
                     <div class="crybaby">
-                    <img src="img/crybaby cry me an ocean series - vinyl plush.jpg" width="250px">
-                    <a href="/Cry Me An Ocean Series/seriplush.html">CRYBABY Cry Me An Ocean Series- Vinyl Plush Pendant Blind Box</a>
+                    <img src="img/crybaby cry me an ocean series - vinyl plush.jpg" width="250px" alt="GambarSeriVinylPlush">
+                    <br>
+                    <a href="/Cry Me An Ocean Series/seriplush.html">CRYBABY Cry Me An Ocean Series Vinyl Plush Pendant Blind Box</a>
                     <p>Rp 199.000,00</p>
                     </div>
 
                     <div class="crybaby">
-                    <img src="img/crybaby cry me an ocean series earphone bag.jpg" width="250px">
+                    <img src="img/crybaby cry me an ocean series earphone bag.jpg" width="250px" alt="GambarSeriEarphone">
+                    <br>
                     <a href="/Cry Me An Ocean Series/seriearphonebag.html">CRYBABY Cry Me an Ocean Series Earphone Bag</a>
                     <p>Rp 309.000,00</p>
                     </div>
 
                     <div class="crybaby">
-                    <img src="img/crybaby figures.jpg" width="250px">
+                    <img src="img/crybaby figures.jpg" width="250px" alt="GambarSeriFigure">
+                    <br>
                     <a href="/Cry Me An Ocean Series/serifigures.html">CRYBABY Cry Me an Ocean Series Figures</a>
                     <p>Rp 185.000,00</p>
                     </div>
 
                     
-                </section>
-                </section>
-            
+                    </section>
+
+                    
+
                 <section class="pos3">
                     <section class="judul">
-                        <h1> HOT PRODUCTS</h1>
+                        <h1>HOT PRODUCTS</h1>
                         <p>Explore every POP MART collectible, from iconic favorites to the latest new arrivals</p>
                         <button>Learn More</button>
                         </section>
                         <section class="PopularProducts">
-                            <img src="img/bikini bottom buddies.jpg" width="250px">
+                            <img src="img/bikini bottom buddies.jpg" width="250px" alt="Gambar">
                             <h4>Bikini Bottom Buddies - Whimsical Plush</h4>
                             <p>Rp 159.000,00</p>            
                             </section>
                             <section class="PopularProducts">
-                            <img src="img/hacipupu action figure.jpg" width="250px">
+                            <img src="img/hacipupu action figure.jpg" width="250px" alt="gambar">
                             <h4>HACIPUPU Little Foodie Series 1/12 Action Figure</h4>
                             <p>Rp 729.000,00</p>
                             </section>
                             <section class="PopularProducts">
-                            <img src="img/crybaby wild but cutie.jpg" width="250px">
+                            <img src="img/crybaby wild but cutie.jpg" width="250px" alt="gambar">
                             <h4>CRYBABY Wild but Cutie Series - Vinyl Plush Pendant Blind Box</h4>
                             <p>Rp 199.000,00</p>
                             </section>
                             <section class="PopularProducts">
-                            <img src="img/Labubu x FIFA.jpg" width="250px">   
+                            <img src="img/Labubu x FIFA.jpg" width="250px" alt="gambar">   
                             <h4>THE MONSTERS × FIFA SERIES-Catch the Win Vinyl Plush Doll</h4>
                             <p>Rp 1.459.000,00</p> 
                             </section>
                             <section class="PopularProducts">
-                            <img src="img/skull panda.jpg" width="250px">
+                            <img src="img/skull panda.jpg" width="250px" alt="gambar">
                             <h4>SKULLPANDA Amid Flowers Plush Doll Pendant</h4>
                             <p>Rp 492.000,00</p>
                             </section>
                             <section class="PopularProducts">
-                            <img src="img/twinkle twinkle.jpg" width="250px">
+                            <img src="img/twinkle twinkle.jpg" width="250px" alt="gambar">
                             <h4>Twinkle Twinkle Crush On You Series-Plush Pendent Blind Box</h4>
                             <p>Rp 239.000,00</p>
                             </section>
                             <section class="PopularProducts">
-                            <img src="img/Dimoo.jpg" width="250px">
+                            <img src="img/Dimoo.jpg" width="250px" alt="gambar">
                             <h4>DIMOO Moments in Bloom Series Figures</h4>
                             <p>Rp 185.000,00</p>
                             </section>
                             <section class="PopularProducts">
-                            <img src="img/hirono.jpg" width="250px">
+                            <img src="img/hirono.jpg" width="250px" alt="gambar">
                             <h4>Hirono×Le Petit Prince Series Figures</h4>
                             <p>Rp 179.000,00</p>
                             </section>
                             <section class="PopularProducts">
-                            <img src="img/Skull Panda The Paradox Series Figures.jpg" width="250px">
+                            <img src="img/Skull Panda The Paradox Series Figures.jpg" width="250px" alt="gambar">
                             <h4>SKULLPANDA The Paradox Series Figures</h4>
                             <p>Rp 179.000,00</p>
                             </section>
